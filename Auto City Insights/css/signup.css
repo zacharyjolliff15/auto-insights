@@ -67,3 +67,8 @@ button:hover {
     height: 70px;
     padding-left: 50px;
 }
+
+.header{
+    display: flex;
+    justify-content: flex-start;
+}
