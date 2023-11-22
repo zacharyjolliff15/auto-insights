@@ -89,9 +89,16 @@ button:hover {
     background-color: rgb(154, 0, 0);
 }
 
-.signup-row{
+.signup-form{
     display: flex;
     justify-content: space-evenly;
+}
+
+.signup-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    
 }
 
 /* this is default for label */
