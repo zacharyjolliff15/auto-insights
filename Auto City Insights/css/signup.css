@@ -18,6 +18,7 @@ h1 {
 
 h2 {
   color: white;
+  padding: 15px 0 15px 0;
 }
 
 input[type=text], input[type=password] {
@@ -53,9 +54,9 @@ button:hover {
   width: 50%;
 }
 .signupbtn {
-  width: 20%;
-  background-color: #4CAF50;
-  color: white;
+  width: 40%;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -105,4 +106,9 @@ button:hover {
 b {
     color: darkgray;
     font-weight: 100;
+}
+
+.signup-text{
+    display: flex;
+    align-items: center;
 }
