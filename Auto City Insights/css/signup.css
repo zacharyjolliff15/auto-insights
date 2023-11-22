@@ -94,3 +94,8 @@ button:hover {
     justify-content: space-evenly;
 }
 
+/* this is default for label */
+b {
+    color: darkgray;
+    font-weight: 100;
+}
