@@ -15,6 +15,11 @@ h1 {
   text-align: center;
   color: white;
 }
+
+h2 {
+  color: white;
+}
+
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
@@ -71,5 +76,10 @@ button:hover {
 .header{
     display: flex;
     justify-content: space-around;
-    
+}
+
+.redSignUp{
+    display: flex;
+    justify-content: center;
+    background-color: red;
 }
