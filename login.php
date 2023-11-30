@@ -56,7 +56,7 @@ if (isset($_SESSION["user"])) {
           <label for="username"><b>Account Email:</b></label>
         </div>
         <div>
-          <input type="email" placeholder="Enter Email:" name="email" required>
+          <input type="text" placeholder="Enter Email:" name="email" required>
         </div>
       </div>
 
