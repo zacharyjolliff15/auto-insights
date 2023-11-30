@@ -25,7 +25,7 @@ if (!isset($_SESSION["user"])) {
             <nav class="navigation hide" id="navigation">
                 <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="comment.html">Comments</a></li>
+                    <li class="nav-item"><a href="comment.php">Comments</a></li>
                 </ul>
             </nav>
             <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>

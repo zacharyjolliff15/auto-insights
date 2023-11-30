@@ -17,12 +17,13 @@
             <nav class="navigation hide" id="navigation">
                 <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="reviews.html">Reviews</a></li>
+                    <li class="nav-item"><a href="reviews.php">Reviews</a></li>
               
                 </ul>
             </nav>
             <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
             <div class="brand">Comment Section</div>
+            <a href="logout.php">Logout</a>
         </div>
         <!--SearchBox Section-->
         <div class="search-box">
