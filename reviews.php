@@ -16,6 +16,8 @@ if (!isset($_SESSION["user"])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/reviews.css">
+    <!-- THIS SITE IS GOATED USE THIS FOR REVIEWS https://www.freeiconspng.com/images/car-png -->
 </head>
 
 <body>
@@ -52,7 +54,9 @@ if (!isset($_SESSION["user"])) {
             </div>
             <div class="subreview-row">
                 <div class="subreview-icon subreview-column center">
-                    <i class="fa fa-car center"></i>
+                    <div class="containerImg">
+                    <a href="" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/land-rover-range-rover-car-png-25.png" width="350" alt="land rover, range rover car png" /></a>
+                     </div>
                 </div>
                 <div class="subreview-description subreview-column">
                     <h4><a href="#">Description Title</a></h4>
@@ -62,14 +66,16 @@ if (!isset($_SESSION["user"])) {
                     <span>24 Posts | 12 Topics</span>
                 </div>
                 <div class="subreview-info subreview-column">
-                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
+                    <b><a href="">Last post</a></b> by <a href="">Admin</a> 
                     <br>on <small>12 Dec 2020</small>
                 </div>
             </div>
 
             <div class="subreview-row">
                 <div class="subreview-icon subreview-column center">
-                    <i class="fa fa-car center"></i>
+                <div class="containerImg">
+                <a href="" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/audi-png-auto-car-0.png" width="350" alt="Audi PNG auto car" /></a>
+                     </div>
                 </div>
                 <div class="subreview-description subreview-column">
                     <h4><a href="#">Description Title</a></h4>
@@ -79,14 +85,16 @@ if (!isset($_SESSION["user"])) {
                     <span>24 Posts | 12 Topics</span>
                 </div>
                 <div class="subreview-info subreview-column">
-                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
+                    <b><a href="">Last post</a></b> by <a href="">Admin</a> 
                     <br>on <small>12 Dec 2020</small>
                 </div>
             </div>
 
             <div class="subreview-row">
                 <div class="subreview-icon subreview-column center">
-                    <i class="fa fa-car center"></i>
+                <div class="containerImg">
+                <a href="" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/volkswagen-car-png-image-7.png" width="350" alt="Volkswagen car PNG image" /></a>
+                     </div>
                 </div>
                 <div class="subreview-description subreview-column">
                     <h4><a href="#">Description Title</a></h4>
@@ -96,14 +104,17 @@ if (!isset($_SESSION["user"])) {
                     <span>24 Posts | 12 Topics</span>
                 </div>
                 <div class="subreview-info subreview-column">
-                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
+                    <b><a href="">Last post</a></b> by <a href="">Admin</a> 
                     <br>on <small>12 Dec 2020</small>
                 </div>
             </div>
 
             <div class="subreview-row">
                 <div class="subreview-icon subreview-column center">
-                    <i class="fa fa-car center"></i>
+                <div class="containerImg">
+
+                <a href="" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/car-png-27.png" width="350" alt="Car Png Available In Different Size" /></a>
+                     </div>
                 </div>
                 <div class="subreview-description subreview-column">
                     <h4><a href="#">Description Title</a></h4>
@@ -113,14 +124,16 @@ if (!isset($_SESSION["user"])) {
                     <span>24 Posts | 12 Topics</span>
                 </div>
                 <div class="subreview-info subreview-column">
-                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
+                    <b><a href="">Last post</a></b> by <a href="">Admin</a> 
                     <br>on <small>12 Dec 2020</small>
                 </div>
             </div>
 
             <div class="subreview-row">
                 <div class="subreview-icon subreview-column center">
-                    <i class="fa fa-car center"></i>
+                <div class="containerImg">
+                <a href="" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/yellow-car-png-26.png" width="350" alt="yellow car png" /></a>
+                     </div>
                 </div>
                 <div class="subreview-description subreview-column">
                     <h4><a href="#">Description Title</a></h4>
@@ -130,14 +143,16 @@ if (!isset($_SESSION["user"])) {
                     <span>24 Posts | 12 Topics</span>
                 </div>
                 <div class="subreview-info subreview-column">
-                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
+                    <b><a href="">Last post</a></b> by <a href="">Admin</a> 
                     <br>on <small>12 Dec 2020</small>
                 </div>
             </div>
 
             <div class="subreview-row">
                 <div class="subreview-icon subreview-column center">
-                    <i class="fa fa-car center"></i>
+                <div class="containerImg">
+                <a href="" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/cars-png-31.png" width="350" alt="cars png" /></a>
+                     </div>
                 </div>
                 <div class="subreview-description subreview-column">
                     <h4><a href="#">Description Title</a></h4>
@@ -147,7 +162,7 @@ if (!isset($_SESSION["user"])) {
                     <span>24 Posts | 12 Topics</span>
                 </div>
                 <div class="subreview-info subreview-column">
-                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
+                    <b><a href="">Last post</a></b> by <a href="">Admin</a> 
                     <br>on <small>30 Nov 2023</small>
                 </div>
             </div>
@@ -164,7 +179,7 @@ if (!isset($_SESSION["user"])) {
                     <span>24 Posts | 12 Topics</span>
                 </div>
                 <div class="subreview-info subreview-column">
-                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
+                    <b><a href="">Last post</a></b> by <a href="">Admin</a> 
                     <br>on <small>30 Nov 2023</small>
                 </div>
             </div>
