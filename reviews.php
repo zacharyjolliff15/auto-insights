@@ -50,7 +50,7 @@ if (!isset($_SESSION["user"])) {
     <div class="container">
         <div class="subreview">
             <div class="subreview-title">
-                <h1>General Information</h1>
+                <h1>Curated Reviews</h1>
             </div>
             <div class="subreview-row">
                 <div class="subreview-icon subreview-column center">
@@ -59,11 +59,11 @@ if (!isset($_SESSION["user"])) {
                      </div>
                 </div>
                 <div class="subreview-description subreview-column">
-                    <h4><a href="#">Description Title</a></h4>
-                    <p>Description Content: ""</p>
+                    <h4><a href="#">[Land Rover] [Discovery] [2022] [$45,000]</a></h4>
+                    <p>Description Content: "An eye-catching orange Land Rover Discovery from 2022, combining luxury and off-road capability for an adventurous driving experience"</p>
                 </div>
                 <div class="subreview-stats subreview-column center">
-                    <span>24 Posts | 12 Topics</span>
+                    <span>21 Likes | 12 Dislikes</span>
                 </div>
                 <div class="subreview-info subreview-column">
                     <b><a href="">Last post</a></b> by <a href="">Admin</a> 
@@ -78,11 +78,11 @@ if (!isset($_SESSION["user"])) {
                      </div>
                 </div>
                 <div class="subreview-description subreview-column">
-                    <h4><a href="#">Description Title</a></h4>
-                    <p>Description Content: ""</p>
+                    <h4><a href="#">[Audi] [A4] [2020] [$35,000]</a></h4>
+                    <p>Description Content: "A sophisticated red Audi A4 sedan from 2020, boasting a perfect blend of performance, style, and cutting-edge technology."</p>
                 </div>
                 <div class="subreview-stats subreview-column center">
-                    <span>24 Posts | 12 Topics</span>
+                    <span>20 Likes | 8 Dislikes</span>
                 </div>
                 <div class="subreview-info subreview-column">
                     <b><a href="">Last post</a></b> by <a href="">Admin</a> 
@@ -97,11 +97,11 @@ if (!isset($_SESSION["user"])) {
                      </div>
                 </div>
                 <div class="subreview-description subreview-column">
-                    <h4><a href="#">Description Title</a></h4>
-                    <p>Description Content: ""</p>
+                <h4><a href="#">[Volkswagen [Jetta] [2019] [$20,500]</a></h4>
+                    <p>Description Content: ": A vibrant red Volkswagen Jetta sedan, 2019 model, offering a perfect blend of style, efficiency, and modern features for an enjoyable driving experience."</p>
                 </div>
                 <div class="subreview-stats subreview-column center">
-                    <span>24 Posts | 12 Topics</span>
+                    <span>24 Likes | 4 Dislikes</span>
                 </div>
                 <div class="subreview-info subreview-column">
                     <b><a href="">Last post</a></b> by <a href="">Admin</a> 
@@ -117,11 +117,11 @@ if (!isset($_SESSION["user"])) {
                      </div>
                 </div>
                 <div class="subreview-description subreview-column">
-                    <h4><a href="#">Description Title</a></h4>
-                    <p>Description Content: ""</p>
+                <h4><a href="#">[Mercedes-Benz] [C-Class] [2021] [$40,000]</a></h4>
+                    <p>Description Content: "A pristine white Mercedes-Benz C-Class sedan, 2021 model, featuring elegant design, advanced safety features, and a luxurious driving experience."</p>
                 </div>
                 <div class="subreview-stats subreview-column center">
-                    <span>24 Posts | 12 Topics</span>
+                    <span>4 Likes | 1 Dislikes</span>
                 </div>
                 <div class="subreview-info subreview-column">
                     <b><a href="">Last post</a></b> by <a href="">Admin</a> 
@@ -136,11 +136,11 @@ if (!isset($_SESSION["user"])) {
                      </div>
                 </div>
                 <div class="subreview-description subreview-column">
-                    <h4><a href="#">Description Title</a></h4>
-                    <p>Description Content: ""</p>
+                    <h4><a href="#">[Grand AM] [XY Sedan] [2017] [$19,000]</a></h4>
+                    <p>Description Content: "A cheerful yellow sedan, 2023 model, providing a budget-friendly and reliable option for daily commuting with a touch of vibrant style."</p>
                 </div>
                 <div class="subreview-stats subreview-column center">
-                    <span>24 Posts | 12 Topics</span>
+                    <span>14 Likes | 3 Dislikes</span>
                 </div>
                 <div class="subreview-info subreview-column">
                     <b><a href="">Last post</a></b> by <a href="">Admin</a> 
@@ -155,16 +155,20 @@ if (!isset($_SESSION["user"])) {
                      </div>
                 </div>
                 <div class="subreview-description subreview-column">
-                    <h4><a href="#">Description Title</a></h4>
-                    <p>Description Content: ""</p>
+                    <h4><a href="#">[BMW] [X5] [2015] [$55,000]</a></h4>
+                    <p>Description Content: "A sophisticated gray BMW X5 SUV, 2022 model, combining luxury, performance, and spacious interiors for a superior driving experience."</p>
                 </div>
                 <div class="subreview-stats subreview-column center">
-                    <span>24 Posts | 12 Topics</span>
+                    <span>17 Likes | 4 Dislikes</span>
                 </div>
                 <div class="subreview-info subreview-column">
                     <b><a href="">Last post</a></b> by <a href="">Admin</a> 
                     <br>on <small>30 Nov 2023</small>
                 </div>
+            </div>
+
+            <div class="subreview-title">
+                <h1>User Reviews</h1>
             </div>
 
             <div class="subreview-row">
@@ -176,7 +180,7 @@ if (!isset($_SESSION["user"])) {
                     <p>Description Content: ""</p>
                 </div>
                 <div class="subreview-stats subreview-column center">
-                    <span>24 Posts | 12 Topics</span>
+                    <span>0 Likes | 0 Dislikes</span>
                 </div>
                 <div class="subreview-info subreview-column">
                     <b><a href="">Last post</a></b> by <a href="">Admin</a> 
