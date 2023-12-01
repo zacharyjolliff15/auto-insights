@@ -3,6 +3,8 @@ session_start();
 if (!isset($_SESSION["user"])) {
    header("Location: login.php");
 }
+
+include('displayImages.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -177,7 +179,7 @@ if (!isset($_SESSION["user"])) {
             <div class="subreview-row">
                 <div class="subreview-icon subreview-column center">
                 <div class="containerImg">
-                <?php include('displayImages.php'); ?>
+                <?php displayImage(3) ?>
                      </div>
                 </div>
                 <div class="subreview-description subreview-column">
