@@ -16,3 +16,4 @@ foreach ($imageFiles as $imageFile) {
     echo "<img src='$imageFolder$imageFile' alt='Image'>";
 }
 ?>
+<!-- this needs to exist inside of where the user reviews will live -->
