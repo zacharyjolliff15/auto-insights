@@ -1,7 +1,17 @@
 <?php
+// Directory to store the reviews
+$imageFolder = 'uploads/';
+
+// Ensure the directory exists, create it if not
+if (!file_exists($imageFolder)) {
+    mkdir($imageFolder, 0777, true);
+}
+
 // Function to display a specific image from the 'uploads/' folder
 function displayImage($index) {
-    $imageFolder = 'uploads/';
+    global $imageFolder;
+
+
     $allowedExtensions = array('jpg', 'jpeg', 'png');
 
     // Get all files in the folder

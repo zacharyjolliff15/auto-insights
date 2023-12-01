@@ -180,7 +180,7 @@ include('process_form.php');
             <div class="subreview-row">
                 <div class="subreview-icon subreview-column center">
                 <div class="containerImg">
-                <?php displayImage(3) ?>
+                <?php displayImage(2) ?>
                      </div>
                 </div>
                 <div class="subreview-description subreview-column">

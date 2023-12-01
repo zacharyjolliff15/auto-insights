@@ -32,14 +32,6 @@ function displayReview($index) {
     }
 }
 
-// Check if the 'index' query parameter is set
-if (isset($_GET['index'])) {
-    $index = intval($_GET['index']); // Convert to integer for security
-    displayReview($index);
-} else {
-    echo "Invalid request. Please specify the 'index' parameter.";
-}
-
 // Handle form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve the sentence from the form
