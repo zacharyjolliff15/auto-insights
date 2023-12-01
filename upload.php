@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
                 $fileNameNew = uniqid('', true).".".$fileActualExt;
                 $fileDesintation = 'uploads/'.$fileNameNew;
                 move_uploaded_file($fileTmpName, $fileDesintation);
-                header("Location: index.php?uploadsuccess");
+                header("Location: createReview.php?uploadsuccess");
             } else {
                 echo "file is to big";
             }
