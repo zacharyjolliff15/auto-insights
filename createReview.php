@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Create a New Review</title>
 </head>
 <body>
 <form action="upload.php" method="POST" enctype="multipart/form-data">
