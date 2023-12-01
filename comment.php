@@ -18,6 +18,7 @@
                 <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
                 <ul class="nav-list">
                     <li class="nav-item"><a href="reviews.php">Reviews</a></li>
+                    <li class="nav-item"><a href="createReview.php">New Review</a></li>
               
                 </ul>
             </nav>
