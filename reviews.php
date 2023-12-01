@@ -172,9 +172,13 @@ if (!isset($_SESSION["user"])) {
                 <h1>User Reviews</h1>
             </div>
 
+            
+
             <div class="subreview-row">
                 <div class="subreview-icon subreview-column center">
-                    <i class="fa fa-car center"></i>
+                <div class="containerImg">
+                <?php include('displayImages.php'); ?>
+                     </div>
                 </div>
                 <div class="subreview-description subreview-column">
                     <h4><a href="#">Description Title</a></h4>

@@ -10,3 +10,5 @@
     <?php include('displayImages.php'); ?>
 </body>
 </html>
+
+<!-- just to test if user uploaded images can be displayed -->
