@@ -30,7 +30,7 @@ if (isset($_POST['submit'])) {
     }
 
 }
-
+// this is for uploading images for reviews
 
 
 
