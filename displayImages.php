@@ -32,7 +32,7 @@ function displayImage($index) {
         $selectedImage = $imageFiles[$index];
         echo "<img src='$imageFolder$selectedImage' alt='Image'>";
     } else {
-        echo "Image not found.";
+        echo "Image Pending...";
     }
 }
 

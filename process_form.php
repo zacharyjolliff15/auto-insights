@@ -28,7 +28,7 @@ function displayReview($index) {
         $reviewContent = file_get_contents($reviewsDir . $selectedReview);
         echo "Review #$index: $reviewContent";
     } else {
-        echo "Review not found.";
+        echo "Review not yet written!";
     }
 }
 

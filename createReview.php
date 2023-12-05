@@ -7,20 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="Create_rev_body">
-<!-- <form action="upload.php" method="POST" enctype="multipart/form-data">
-    <input type="file" id="image" name="file">
-    <button type="submit" name="submit">UPLOAD</button>
-</form>
-<form action="process_form.php" method="POST">
-        <label for="sentence">Enter your sentence:</label>
-        <input type="text" id="sentence" name="sentence" required>
-        <button type="submit">Submit</button>
-    </form> -->
- 
-
 <div class="header">
     <div>
-      <img class="logo" src="../images/Website Logo.png" alt="Logo">
+      <img class="logo" src="images/autoInsights.png" alt="Logo">
     </div>
     <div>
       <h1>Auto Insights</h1>
@@ -82,7 +71,7 @@
                 </div>
             </div>
 
-            <button type="button" class="sub_btn" onclick="submitForm()">Submit Review</button>
+            <!-- <button type="button" class="sub_btn" onclick="submitForm()">Submit Review</button> -->
         </div>
     </div>
 </form>

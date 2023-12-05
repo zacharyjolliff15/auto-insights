@@ -180,7 +180,7 @@ include('process_form.php');
             <div class="subreview-row">
                 <div class="subreview-icon subreview-column center">
                 <div class="containerImg">
-                <?php displayImage(2) ?>
+                <?php displayImage(0) ?>
                      </div>
                 </div>
                 <div class="subreview-description subreview-column">
@@ -195,6 +195,27 @@ include('process_form.php');
                     <br>on <small>30 Nov 2023</small>
                 </div>
             </div>
+
+            <div class="subreview-row">
+                <div class="subreview-icon subreview-column center">
+                <div class="containerImg">
+                <?php displayImage(1) ?>
+                     </div>
+                </div>
+                <div class="subreview-description subreview-column">
+                    <h4><a href="#">Description Title</a></h4>
+                    <p><?php displayReview(1) ?></p>
+                </div>
+                <div class="subreview-stats subreview-column center">
+                    <span>0 Likes | 0 Dislikes</span>
+                </div>
+                <div class="subreview-info subreview-column">
+                    <b><a href="">Last post</a></b> by <a href="">Admin</a> 
+                    <br>on <small>30 Nov 2023</small>
+                </div>
+            </div>
+
+            
         </div>
     </div>
 
