@@ -42,7 +42,7 @@
 
             <div class="vehicle-dets">
             <label for="brand">Vehicle Year:</label>
-                <form action="process_form_year.php" method="POST">
+                <form id="formYear" action="process_form_year.php" method="POST">
                 <input type="text" id="sentence" name="sentence" required>
                 <button type="submit">Submit</button>
                 </form>
@@ -50,7 +50,7 @@
 
             <div class="vehicle-dets">
             <label for="brand">Vehicle Price:</label>
-                <form action="process_form_price.php" method="POST">
+                <form id="formPrice" action="process_form_price.php" method="POST">
                 <input type="text" id="sentence" name="sentence" required>
                 <button type="submit">Submit</button>
                 </form>
@@ -67,7 +67,7 @@
 
             <div class="review-text-section">
                 <div class="review-text">
-                <form action="process_form.php" method="POST">
+                <form id="formReview" action="process_form.php" method="POST">
                 <label for="review">Enter Your Review Text:</label>
                 <input type="text" id="sentence" name="sentence" required>
                 <button type="submit">Submit</button>
@@ -77,7 +77,7 @@
                 <div class="rating-section">
                     <h2>Vehicle Rating (1-10)</h2>
                     <div class="vehicle-dets">
-                <form action="process_form_rating.php" method="POST">
+                <form id="formRating" action="process_form_rating.php" method="POST">
                 <input type="text" id="sentence" name="sentence" required>
                 <button type="submit">Submit</button>
                 </form>
@@ -100,8 +100,10 @@
     async function submitAllForms() {
         const formBrand = document.getElementById('formBrand');
         const formModel = document.getElementById('formModel');
-        const formReview = document.getElementById('formReview');
+        const formYear = document.getElementById('formYear');
         const formRating = document.getElementById('formRating');
+        const formReview = document.getElementById('formReview');
+        const formPrice = document.getElementById('formPrice');
 
         // Submit formBrand asynchronously
         await fetch(formBrand.action, {
@@ -117,13 +119,11 @@
             body: new URLSearchParams(new FormData(formModel))
         });
 
-        // Submit other forms as needed...
-
-        // Submit formReview asynchronously
-        await fetch(formReview.action, {
-            method: formReview.method,
+        // Submit formYear asynchronously
+        await fetch(formYear.action, {
+            method: formYear.method,
             headers: { "Content-type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(new FormData(formReview))
+            body: new URLSearchParams(new FormData(formYear))
         });
 
         // Submit formRating asynchronously
@@ -131,6 +131,20 @@
             method: formRating.method,
             headers: { "Content-type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(new FormData(formRating))
+        });
+
+         // Submit formReview asynchronously
+         await fetch(formReview.action, {
+            method: formReview.method,
+            headers: { "Content-type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(new FormData(formReview))
+        });
+
+         // Submit formPrice asynchronously
+         await fetch(formPrice.action, {
+            method: formPrice.method,
+            headers: { "Content-type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(new FormData(formPrice))
         });
 
         // Optionally, you can perform additional actions after all forms are submitted.
