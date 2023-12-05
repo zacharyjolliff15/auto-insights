@@ -26,17 +26,17 @@
             
             <div class="vehicle-dets">
             <label for="brand">Vehicle Brand:</label>
-                <form action="process_form_brand.php" method="POST">
+                <form id="formBrand" action="process_form_brand.php" method="POST">
                  <input type="text" id="sentence" name="sentence" required>
-                <button type="submit">Submit</button>
+                
                   </form>
                   </div>
 
             <div class="vehicle-dets">
             <label for="brand">Vehicle Model:</label>
-                <form action="process_form_model.php" method="POST">
+                <form id="formModel" action="process_form_model.php" method="POST">
                 <input type="text" id="sentence" name="sentence" required>
-                <button type="submit">Submit</button>
+              
                 </form>
             </div>
 
@@ -85,7 +85,7 @@
                 </div>
             </div>
 
-            <!-- <button type="button" class="sub_btn" onclick="submitForm()">Submit Review</button> -->
+            <button type="button" class="sub_btn" onclick="submitAllForms()">Submit Review</button>
         </div>
     </div>
 </form>
@@ -96,7 +96,46 @@
 <span id="footer-text">
     Copyright of Auto Insights &copy; 2023</span    >
 </footer>
+<script>
+    async function submitAllForms() {
+        const formBrand = document.getElementById('formBrand');
+        const formModel = document.getElementById('formModel');
+        const formReview = document.getElementById('formReview');
+        const formRating = document.getElementById('formRating');
 
+        // Submit formBrand asynchronously
+        await fetch(formBrand.action, {
+            method: formBrand.method,
+            headers: { "Content-type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(new FormData(formBrand))
+        });
 
+        // Submit formModel asynchronously
+        await fetch(formModel.action, {
+            method: formModel.method,
+            headers: { "Content-type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(new FormData(formModel))
+        });
+
+        // Submit other forms as needed...
+
+        // Submit formReview asynchronously
+        await fetch(formReview.action, {
+            method: formReview.method,
+            headers: { "Content-type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(new FormData(formReview))
+        });
+
+        // Submit formRating asynchronously
+        await fetch(formRating.action, {
+            method: formRating.method,
+            headers: { "Content-type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(new FormData(formRating))
+        });
+
+        // Optionally, you can perform additional actions after all forms are submitted.
+        console.log("All forms submitted successfully!");
+    }
+</script>
 </body>
 </html>
