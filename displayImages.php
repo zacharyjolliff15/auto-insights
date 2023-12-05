@@ -41,7 +41,7 @@ if (isset($_GET['index'])) {
     $index = intval($_GET['index']); // Convert to integer for security
     displayImage($index);
 } else {
-    echo "Invalid request. Please specify the 'index' parameter.";
+    // echo "Invalid request. Please specify the 'index' parameter.";
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

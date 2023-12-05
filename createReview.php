@@ -5,19 +5,30 @@
     <link rel="stylesheet" type="text/css" href="css/createReview.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+
+    
 </head>
 <body class="Create_rev_body">
-<div class="header">
-    <div>
-      <img class="logo" src="images/autoInsights.png" alt="Logo">
-    </div>
-    <div>
-      <h1>Auto Insights</h1>
-    </div>
-    <div>
-        <a class="logout-button" href="index.php">Log Out</a>
-    </div>
-</div>
+  <!--NavBar Section-->
+  
+  <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="comment.php">Comments</a></li>
+                    <li class="nav-item"><a href="createReview.php">New Review</a></li>
+                    <li class="nav-item"><a href="reviews.php">Reviews</a></li>
+                </ul>
+            </nav>
+            <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+            <div class="brand">create review</div>
+            <a href="logout.php">Logout</a>
+        </div>
 
 
     <div class="vehicle-details-section">
@@ -44,7 +55,6 @@
             <label for="brand">Vehicle Year:</label>
                 <form id="formYear" action="process_form_year.php" method="POST">
                 <input type="text" id="sentence" name="sentence" required>
-                <button type="submit">Submit</button>
                 </form>
             </div>
 
@@ -52,7 +62,6 @@
             <label for="brand">Vehicle Price:</label>
                 <form id="formPrice" action="process_form_price.php" method="POST">
                 <input type="text" id="sentence" name="sentence" required>
-                <button type="submit">Submit</button>
                 </form>
             </div>
 
@@ -68,9 +77,8 @@
             <div class="review-text-section">
                 <div class="review-text">
                 <form id="formReview" action="process_form.php" method="POST">
-                <label for="review">Enter Your Review Text:</label>
+                <label for="review">Review Text:</label>
                 <input type="text" id="sentence" name="sentence" required>
-                <button type="submit">Submit</button>
                 </form>
                 </div>
 
@@ -79,7 +87,6 @@
                     <div class="vehicle-dets">
                 <form id="formRating" action="process_form_rating.php" method="POST">
                 <input type="text" id="sentence" name="sentence" required>
-                <button type="submit">Submit</button>
                 </form>
                     </div>
                 </div>

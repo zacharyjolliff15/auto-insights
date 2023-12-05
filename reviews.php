@@ -32,6 +32,7 @@ include('process_form.php');
                 <ul class="nav-list">
                     <li class="nav-item"><a href="comment.php">Comments</a></li>
                     <li class="nav-item"><a href="createReview.php">New Review</a></li>
+                    <li class="nav-item"><a href="reviews.php">Reviews</a></li>
                 </ul>
             </nav>
             <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
