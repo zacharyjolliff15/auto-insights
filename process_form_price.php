@@ -1,6 +1,6 @@
 <?php
 // Directory to store the reviews
-$reviewsDir = 'reviews/';
+$reviewsDir = 'reviewsPrice/';
 
 // Ensure the directory exists, create it if not
 if (!file_exists($reviewsDir)) {
@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sentence = $_POST["sentence"];
 
     // Generate a unique filename based on timestamp
-    $filename = $reviewsDir . 'review_' . time() . '.txt';
+    $filename = $reviewsDir . 'reviewPrice_' . time() . '.txt';
 
     // Write the sentence to the file
     file_put_contents($filename, $sentence);

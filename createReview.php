@@ -19,28 +19,41 @@
     </div>
 </div>
 
-<form action="upload.php" method="POST" enctype="multipart/form-data">
+
     <div class="vehicle-details-section">
         <div class="input-section">
             <h2>Enter your vehicle specifications below</h2>
+            
             <div class="vehicle-dets">
-                <label for="brand">Vehicle Brand:</label>
-                <input type="text" id="brand" name="brand" placeholder="Enter brand">
+            <label for="brand">Vehicle Brand:</label>
+                <form action="process_form_brand.php" method="POST">
+                 <input type="text" id="sentence" name="sentence" required>
+                <button type="submit">Submit</button>
+                  </form>
+                  </div>
+
+            <div class="vehicle-dets">
+            <label for="brand">Vehicle Model:</label>
+                <form action="process_form_model.php" method="POST">
+                <input type="text" id="sentence" name="sentence" required>
+                <button type="submit">Submit</button>
+                </form>
             </div>
 
             <div class="vehicle-dets">
-                <label for="model">Vehicle Model:</label>
-                <input type="text" id="model" name="model" placeholder="Enter model">
+            <label for="brand">Vehicle Year:</label>
+                <form action="process_form_year.php" method="POST">
+                <input type="text" id="sentence" name="sentence" required>
+                <button type="submit">Submit</button>
+                </form>
             </div>
 
             <div class="vehicle-dets">
-                <label for="year">Vehicle  Year: </label>
-                <input type="text" id="year" name="year" placeholder="Enter model year">
-            </div>
-
-            <div class="vehicle-dets">
-                <label for="price">Vehicle Price:</label>
-                <input type="text" id="price" name="price" placeholder="Enter price">
+            <label for="brand">Vehicle Price:</label>
+                <form action="process_form_price.php" method="POST">
+                <input type="text" id="sentence" name="sentence" required>
+                <button type="submit">Submit</button>
+                </form>
             </div>
 
             <div class="upload-section">
@@ -49,24 +62,25 @@
                 <input type="file" id="image" name="file">
                 <button type="submit" name="submit">UPLOAD</button>
   
-</form>
+ </form>
             </div>
 
             <div class="review-text-section">
                 <div class="review-text">
                 <form action="process_form.php" method="POST">
                 <label for="review">Enter Your Review Text:</label>
-      
-        <input type="text" id="sentence" name="sentence" required>
-        <button type="submit">Submit</button>
-                     </form>
+                <input type="text" id="sentence" name="sentence" required>
+                <button type="submit">Submit</button>
+                </form>
                 </div>
 
                 <div class="rating-section">
                     <h2>Vehicle Rating (1-10)</h2>
                     <div class="vehicle-dets">
-                        <label for="rating">Vehicle Rating:</label>
-                        <input type="number" id="rating" name="rating" min="1" max="10" placeholder="Enter Rating">
+                <form action="process_form_rating.php" method="POST">
+                <input type="text" id="sentence" name="sentence" required>
+                <button type="submit">Submit</button>
+                </form>
                     </div>
                 </div>
             </div>
