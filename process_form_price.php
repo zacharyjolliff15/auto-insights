@@ -8,7 +8,7 @@ if (!file_exists($reviewsDir)) {
 }
 
 // Function to display a specific review file
-function displayReview($index) {
+function displayPrice($index) {
     global $reviewsDir;
 
     // Get all files in the folder

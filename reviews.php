@@ -3,10 +3,14 @@ session_start();
 if (!isset($_SESSION["user"])) {
    header("Location: login.php");
 }
-
+?>
+<?php 
 include('displayImages.php');
 include('process_form.php');
+
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -187,6 +191,7 @@ include('process_form.php');
                 <div class="subreview-description subreview-column">
                     <h4><a href="#">Description Title</a></h4>
                     <p><?php displayReview(0) ?></p>
+                    <p><?php displayB(0) ?></p>
                 </div>
                 <div class="subreview-stats subreview-column center">
                     <span>0 Likes | 0 Dislikes</span>
