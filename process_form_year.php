@@ -15,7 +15,7 @@ function displayYear($index) {
     $files = scandir($reviewsDiryear);
 
     // Filter out non-review files based on the filename pattern
-    $reviewFiles = preg_grep('/^review_\d+\.txt$/', $files);
+    $reviewFiles = preg_grep('/^reviewYear_\d+\.txt$/', $files);
 
     // Sort review files based on timestamp
     usort($reviewFiles, function($a, $b) {
