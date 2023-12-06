@@ -195,13 +195,11 @@ include('process_form_year.php');
                      </div>
                 </div>
                 <div class="subreview-description subreview-column">
-                    <h4><a href="#">Description Title</a></h4>
+                    <h4><a href="#">[<?php displayBrand(0)  ?>]</a><a>[<?php displayModel(0)  ?>]</a><a>[<?php displayYear(0)  ?>]</a><a>[<?php displayPrice(0)  ?>]</a></h4>
                     <p><?php displayReview(0)  ?></p>
-                    <p><?php displayBrand(0)  ?></p>
-                    
                 </div>
                 <div class="subreview-stats subreview-column center">
-                    <span>0 Likes | 0 Dislikes</span>
+                    <span><?php displayRating(0)  ?>/10</span>
                 </div>
                 <div class="subreview-info subreview-column">
                     <b><a href="">Last post</a></b> by <a href="">Admin</a> 
@@ -216,17 +214,38 @@ include('process_form_year.php');
                      </div>
                 </div>
                 <div class="subreview-description subreview-column">
-                    <h4><a href="#">Description Title</a></h4>
-                    <p><?php displayReview(1) ?></p>
+                    <h4><a href="#">[<?php displayBrand(1)  ?>]</a><a>[<?php displayModel(1)  ?>]</a><a>[<?php displayYear(1)  ?>]</a><a>[<?php displayPrice(1)  ?>]</a></h4>
+                    <p><?php displayReview(1)  ?></p>
                 </div>
                 <div class="subreview-stats subreview-column center">
-                    <span>0 Likes | 0 Dislikes</span>
+                    <span><?php displayRating(1)  ?>/10</span>
                 </div>
                 <div class="subreview-info subreview-column">
                     <b><a href="">Last post</a></b> by <a href="">Admin</a> 
                     <br>on <small>30 Nov 2023</small>
                 </div>
             </div>
+
+            <div class="subreview-row">
+                <div class="subreview-icon subreview-column center">
+                <div class="containerImg">
+                <?php displayImage(2) ?>
+                     </div>
+                </div>
+                <div class="subreview-description subreview-column">
+                    <h4><a href="#">[<?php displayBrand(2)  ?>]</a><a>[<?php displayModel(2)  ?>]</a><a>[<?php displayYear(2)  ?>]</a><a>[<?php displayPrice(2)  ?>]</a></h4>
+                    <p><?php displayReview(2)  ?></p>
+                </div>
+                <div class="subreview-stats subreview-column center">
+                    <span><?php displayRating(2)  ?>/10</span>
+                </div>
+                <div class="subreview-info subreview-column">
+                    <b><a href="">Last post</a></b> by <a href="">Admin</a> 
+                    <br>on <small>30 Nov 2023</small>
+                </div>
+            </div>
+
+           
 
             
         </div>
