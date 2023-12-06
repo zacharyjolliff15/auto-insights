@@ -7,6 +7,12 @@ if (!isset($_SESSION["user"])) {
 <?php 
 include('displayImages.php');
 include('process_form.php');
+include('process_form_brand.php');
+include('process_form_model.php');
+include('process_form_price.php');
+include('process_form_rating.php');
+include('process_form_year.php');
+
 
 ?>
 
@@ -190,8 +196,9 @@ include('process_form.php');
                 </div>
                 <div class="subreview-description subreview-column">
                     <h4><a href="#">Description Title</a></h4>
-                    <p><?php displayReview(0) ?></p>
-                    <p><?php displayB(0) ?></p>
+                    <p><?php displayReview(0)  ?></p>
+                    <p><?php displayBrand(0)  ?></p>
+                    
                 </div>
                 <div class="subreview-stats subreview-column center">
                     <span>0 Likes | 0 Dislikes</span>

@@ -1,31 +1,31 @@
 <?php
 // Directory to store the reviews
-$reviewsDir = 'reviewsPrice/';
+$reviewsDirprice = 'reviewsPrice/';
 
 // Ensure the directory exists, create it if not
-if (!file_exists($reviewsDir)) {
-    mkdir($reviewsDir, 0777, true);
+if (!file_exists($reviewsDirprice)) {
+    mkdir($reviewsDirprice, 0777, true);
 }
 
 // Function to display a specific review file
 function displayPrice($index) {
-    global $reviewsDir;
+    global $reviewsDirprice;
 
     // Get all files in the folder
-    $files = scandir($reviewsDir);
+    $files = scandir($reviewsDirprice);
 
     // Filter out non-review files based on the filename pattern
     $reviewFiles = preg_grep('/^review_\d+\.txt$/', $files);
 
     // Sort review files based on timestamp
     usort($reviewFiles, function($a, $b) {
-        return filemtime($GLOBALS['reviewsDir'] . $a) < filemtime($GLOBALS['reviewsDir'] . $b);
+        return filemtime($GLOBALS['reviewsDirprice'] . $a) < filemtime($GLOBALS['reviewsDirprice'] . $b);
     });
 
     // Display the specified review if available
     if (!empty($reviewFiles) && isset($reviewFiles[$index])) {
         $selectedReview = $reviewFiles[$index];
-        $reviewContent = file_get_contents($reviewsDir . $selectedReview);
+        $reviewContent = file_get_contents($reviewsDirprice . $selectedReview);
         echo "$reviewContent";
         // echo "Review #$index: $reviewContent";
     } else {
@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sentence = $_POST["sentence"];
 
     // Generate a unique filename based on timestamp
-    $filename = $reviewsDir . 'reviewPrice_' . time() . '.txt';
+    $filename = $reviewsDirprice . 'reviewPrice_' . time() . '.txt';
 
     // Write the sentence to the file
     file_put_contents($filename, $sentence);
