@@ -24,7 +24,7 @@
   }
   
   
-  .logout-button {
+  #Log-out-btn {
     padding: 10px 20px;
     margin-right: 50px;
     background-color: #af4c4c;
@@ -193,3 +193,5 @@
     box-sizing: border-box;
   
   }
+
+

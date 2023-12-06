@@ -10,3 +10,15 @@
     height: 100%; /* Make the image height 100% of the parent div */
     object-fit: cover; /* Optional: Maintain aspect ratio and cover the entire container */
 }
+
+#Review_logout {
+  padding: 10px 20px;
+  margin-right: 50px;
+  background-color: #af4c4c;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}

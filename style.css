@@ -32,6 +32,8 @@ h1{
     padding: 20px;
 }
 
+
+
 .subreview{
     margin-top:20px;
 }
@@ -335,6 +337,13 @@ footer{
     font-size: 15px;
 }
 
+.comment-section {
+    align-items: center;
+    justify-content: center;
+
+}
+
+
 .authors{
     flex: 20%;
 }
@@ -369,6 +378,42 @@ footer{
 }
 
 /* comment section */
+.comment-area{
+    margin-bottom:50px;
+}
+
+.comment-area textarea{
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    margin-block: 10px;
+}
+
+.comment-area input{
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.comment-area input:hover{
+    border: solid 1px #000000;
+}
+
+.comment-section {
+    text-align: center;
+}
+
+.comment-section table {
+    width: auto;
+    max-width: 100%; /* Optional: Set a maximum width if needed */
+    margin: 0 auto;
+    border-collapse: collapse; 
+}
+
+.comment-section table, .comment-section th, .comment-section td {
+    border: 1px solid white; /* Optional: Add borders to the table, th, and td */
+}
 
 #comment_form {
     max-width: 400px;
@@ -429,4 +474,17 @@ input[type="submit"]:hover {
 
 .comment-area input:hover{
     border: solid 1px #000000;
+}
+
+
+#Comment_Logout {
+  padding: 10px 20px;
+  margin-right: 50px;
+  background-color: #af4c4c;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }

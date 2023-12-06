@@ -39,56 +39,58 @@
                 <button><i class="fa fa-search"></i></button>
         </div>
     </div>
-
+    
     <!-- Inside the container class -->
-<div class="container" id="comment_con">
+    <div class="container" id="comment_con">
     <!-- Comment Section -->
-    <div class="comment-section">
-        <h2>Comments</h2>
-
+        <div class="comment-section">
+            <h2>Comments</h2>
+            
         <!-- Display existing comments in a table format -->
-        <?php
+            <?php
         // Assuming you have a database connection established
-        $hostName = "localhost";
-        $dbUser = "root";
-        $dbPassword = "";
-        $dbName = "auto_insights";
+            $hostName = "localhost";
+            $dbUser = "root";
+            $dbPassword = "";
+            $dbName = "auto_insights";
 
-        $conn = mysqli_connect($hostName, $dbUser, $dbPassword, $dbName);
+            $conn = mysqli_connect($hostName, $dbUser, $dbPassword, $dbName);
 
-        if (!$conn) {
-            die("Connection failed: " . mysqli_connect_error());
-        }
-
-        $sql = "SELECT * FROM comments";
-        $result = mysqli_query($conn, $sql);
-
-        if (mysqli_num_rows($result) > 0) {
-            echo "<table class='comment' border='1'>";
-            echo "<tr><th>User</th><th>Comment Text</th></tr>";
-            while ($row = mysqli_fetch_assoc($result)) {
-                echo "<tr><td>" . $row["id"] . "</td><td>" . $row["COMMENT_TEXT"] . "</td></tr>";
+            if (!$conn) {
+                die("Connection failed: " . mysqli_connect_error());
             }
-            echo "</table>";
-        } else {
-            echo "No comments yet.";
-        }
 
-        mysqli_close($conn);
-        ?>
-    </div>
-    <div>
-        <!-- Comment Form -->
-        <form action="submit_comment.php" method="post" id="comment_form">
-            <label for="user">User:</label>
-            <textarea name="user" id="user" rows="1" required></textarea>
+            $sql = "SELECT * FROM comments";
+            $result = mysqli_query($conn, $sql);
 
-            <label for="comment">Add a Comment:</label>
-            <textarea name="comment" id="comment-area" rows="4" required></textarea>
-            <input type="submit" value="Submit Comment">
-        </form>
+            if (mysqli_num_rows($result) > 0) {
+                echo "<table border='1'>";
+                echo "<tr><th>User</th><th>Comment Text</th></tr>";
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo "<tr><td>" . $row["id"] . "</td><td>" . $row["COMMENT_TEXT"] . "</td></tr>";
+                }
+                echo "</table>";
+            } else {
+                echo "No comments yet.";
+            }
+
+            mysqli_close($conn);
+            ?>
+        </div>
+
+        <div id="comment_sect">
+            <!-- Comment Form -->
+           <form action="submit_comment.php" method="post" id="comment_form">
+                <label for="user">User:</label>
+                <textarea name="user" id="user" rows="4" placeholder="Enter Username" required></textarea>
+
+                <label for="comment">Add a Comment:</label>
+                <textarea name="comment" id="comment" rows="4" placeholder="Enter Comment here" required></textarea>
+                <input type="submit" value="Submit Comment" id="sub_com_btn">
+            </form>
+        </div>
+
     </div>
-</div>
 
     <footer>
         <span>&copy;  Auto Insights | All Rights Reserved</span>

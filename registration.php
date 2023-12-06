@@ -66,8 +66,8 @@ if (isset($_SESSION["user"])) {
                 die("Something went wrong");
             }
            }
-          
-
+           header("Location: login.php");
+           exit();
         }
         ?>
 

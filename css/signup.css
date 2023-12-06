@@ -14,6 +14,7 @@ body {
 h1 {
   text-align: center;
   color: white;
+  margin-right: 350px;
 }
 
 h2 {
@@ -111,4 +112,8 @@ b {
 .signup-text{
     display: flex;
     align-items: center;
+}
+
+p {
+  color: orangered;
 }

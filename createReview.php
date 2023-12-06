@@ -27,7 +27,7 @@
             </nav>
             <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
             <div class="brand">create review</div>
-            <a href="logout.php">Logout</a>
+            <a href="logout.php" id="Log-out-btn">Logout</a>
         </div>
 
 
@@ -35,15 +35,6 @@
         <div class="input-section">
             <h2>Enter your vehicle specifications below</h2>
             
-            <div class="upload-section">
-                <h2>Upload Picture</h2>
-                <form action="upload.php" method="POST" enctype="multipart/form-data">
-                <input type="file" id="image" name="file">
-                <button type="submit" name="submit">UPLOAD</button>
-  
-                 </form>
-            </div>
-
             <div class="vehicle-dets">
             <label for="brand">Vehicle Brand:</label>
                 <form id="formBrand" action="process_form_brand.php" method="POST">
@@ -74,7 +65,14 @@
                 </form>
             </div>
 
-            
+            <div class="upload-section">
+                <h2>Upload Picture</h2>
+                <form action="upload.php" method="POST" enctype="multipart/form-data">
+                <input type="file" id="image" name="file">
+                <button type="submit" name="submit">UPLOAD</button>
+  
+ </form>
+            </div>
 
             <div class="review-text-section">
                 <div class="review-text">
