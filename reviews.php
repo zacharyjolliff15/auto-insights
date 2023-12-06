@@ -227,15 +227,15 @@ include('process_form_year.php');
             <div class="subreview-row">
                 <div class="subreview-icon subreview-column center">
                 <div class="containerImg">
-                <?php displayImage(1) ?>
+                <?php displayImage(2) ?>
                      </div>
                 </div>
                 <div class="subreview-description subreview-column">
-                    <h4><a href="#">[<?php displayBrand(1)  ?>]</a><a>[<?php displayModel(1)  ?>]</a><a>[<?php displayYear(1)  ?>]</a><a>[<?php displayPrice(1)  ?>]</a></h4>
-                    <p><?php displayReview(1)  ?></p>
+                    <h4><a href="#">[<?php displayBrand(2)  ?>]</a><a>[<?php displayModel(2)  ?>]</a><a>[<?php displayYear(2)  ?>]</a><a>[<?php displayPrice(2)  ?>]</a></h4>
+                    <p><?php displayReview(2)  ?></p>
                 </div>
                 <div class="subreview-stats subreview-column center">
-                    <span><?php displayRating(1)  ?>/10</span>
+                    <span><?php displayRating(2)  ?>/10</span>
                 </div>
                 <div class="subreview-info subreview-column">
                     <b><a href="">Last post</a></b> by <a href="">Admin</a> 

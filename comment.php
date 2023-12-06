@@ -24,126 +24,72 @@
             </nav>
             <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
             <div class="brand">Comment Section</div>
-            <a href="logout.php">Logout</a>
+            <a href="logout.php" id="Comment_Logout">Logout</a>
         </div>
-        <!--SearchBox Section-->
-        <div class="search-box">
-            <div>
-                <select name="" id="">
-                    <option value="Everything">Everything</option>
-                    <option value="Titles">Titles</option>
-                    <option value="Descriptions">Descriptions</option>
+    </header>
+    <!--SearchBox Section-->
+    <div class="search-box">
+        <div>
+            <select name="" id="">
+                <option value="Everything">Everything</option>
+                <option value="Titles">Titles</option>
+                <option value="Descriptions">Descriptions</option>
                 </select>
                 <input type="text" name="q" placeholder="search ...">
                 <button><i class="fa fa-search"></i></button>
-            </div>
         </div>
-    <div class="container">
-        <!--Navigation-->
-        <div class="navigate">
-            <span><a href="">MyForum - Forums</a> >> <a href="">random subforum</a> >> <a href="">random topic</a></span>
-        </div>
-
-        <!--Topic Section-->
-        <div class="topic-container">
-            <!--Original thread-->
-            <div class="head">
-                <div class="authors">Author</div>
-                <div class="content">Topic: random topic (Read 1325 Times)</div>
-            </div>
-
-            <div class="body">
-                <div class="authors">
-                    <div class="username"><a href="">Username</a></div>
-                    <div>Role</div>
-                    <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="">
-                    <div>Posts: <u>45</u></div>
-                    <div>Points: <u>4586</u></div>
-                </div>
-                <div class="content">
-                    Just a random content of a random topic.
-                    <br>To see how it looks like.
-                    <br><br>
-                    Nothing more and nothing less.
-                    <br>
-                    <hr>
-                    Regards username
-                    <br>
-                    <div class="comment">
-                        <button onclick="showComment()">Comment</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Comment Area-->
-        <div class="comment-area hide" id="comment-area">
-            <textarea name="comment" id="" placeholder="comment here ... "></textarea>
-            <input type="submit" value="submit">
-        </div>
-
-        <!--Comments Section-->
-        <div class="comments-container">
-            <div class="body">
-                <div class="authors">
-                    <div class="username"><a href="">AnotherUser</a></div>
-                    <div>Role</div>
-                    <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="">
-                    <div>Posts: <u>455</u></div>
-                    <div>Points: <u>4586</u></div>
-                </div>
-                <div class="content">
-                    Just a comment of the above random topic.
-                    <br>To see how it looks like.
-                    <br><br>
-                    Nothing more and nothing less.
-                    <br>
-                    <br>
-                    <div class="comment">
-                        <button onclick="showReply()">Reply</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Reply Area-->
-        <div class="comment-area hide" id="reply-area">
-            <textarea name="reply" id="" placeholder="reply here ... "></textarea>
-            <input type="submit" value="submit">
-        </div>
-
-
-        <!--Another Comment With replies-->
-        <div class="comments-container">
-            <div class="body">
-                <div class="authors">
-                    <div class="username"><a href="">AnotherUser</a></div>
-                    <div>Role</div>
-                    <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="">
-                    <div>Posts: <u>455</u></div>
-                    <div>Points: <u>4586</u></div>
-                </div>
-                <div class="content">
-                    Just a comment of the above random topic.
-                    <br>To see how it looks like.
-                    <br><br>
-                    Nothing more and nothing less.
-                    <br>
-                    <br>
-                    <div class="comment">
-                        <button onclick="showReply()">Reply</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Reply Area-->
-        <div class="comment-area hide" id="reply-area">
-            <textarea name="reply" id="" placeholder="reply here ... "></textarea>
-            <input type="submit" value="submit">
-        </div>
-
-        
-
     </div>
+
+    <!-- Inside the container class -->
+<div class="container" id="comment_con">
+    <!-- Comment Section -->
+    <div class="comment-section">
+        <h2>Comments</h2>
+
+        <!-- Display existing comments in a table format -->
+        <?php
+        // Assuming you have a database connection established
+        $hostName = "localhost";
+        $dbUser = "root";
+        $dbPassword = "";
+        $dbName = "auto_insights";
+
+        $conn = mysqli_connect($hostName, $dbUser, $dbPassword, $dbName);
+
+        if (!$conn) {
+            die("Connection failed: " . mysqli_connect_error());
+        }
+
+        $sql = "SELECT * FROM comments";
+        $result = mysqli_query($conn, $sql);
+
+        if (mysqli_num_rows($result) > 0) {
+            echo "<table class='comment' border='1'>";
+            echo "<tr><th>User</th><th>Comment Text</th></tr>";
+            while ($row = mysqli_fetch_assoc($result)) {
+                echo "<tr><td>" . $row["id"] . "</td><td>" . $row["COMMENT_TEXT"] . "</td></tr>";
+            }
+            echo "</table>";
+        } else {
+            echo "No comments yet.";
+        }
+
+        mysqli_close($conn);
+        ?>
+    </div>
+    <div>
+        <!-- Comment Form -->
+        <form action="submit_comment.php" method="post" id="comment_form">
+            <label for="user">User:</label>
+            <textarea name="user" id="user" rows="1" required></textarea>
+
+            <label for="comment">Add a Comment:</label>
+            <textarea name="comment" id="comment-area" rows="4" required></textarea>
+            <input type="submit" value="Submit Comment">
+        </form>
+    </div>
+</div>
+
     <footer>
         <span>&copy;  Auto Insights | All Rights Reserved</span>
     </footer>
