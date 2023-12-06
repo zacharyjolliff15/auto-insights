@@ -1,9 +1,4 @@
-<?php
-session_start();
-if (!isset($_SESSION["user"])) {
-   header("Location: login.php");
-}
-?>
+
 <?php 
 include('displayImages.php');
 include('process_form.php');
@@ -78,7 +73,7 @@ include('process_form_year.php');
                     <p>Description Content: "An eye-catching orange Land Rover Discovery from 2022, combining luxury and off-road capability for an adventurous driving experience"</p>
                 </div>
                 <div class="subreview-stats subreview-column center">
-                    <span>21 Likes | 12 Dislikes</span>
+                    <span>7.5/10</span>
                 </div>
                 <div class="subreview-info subreview-column">
                     <b><a href="">Last post</a></b> by <a href="">Admin</a> 
@@ -97,7 +92,7 @@ include('process_form_year.php');
                     <p>Description Content: "A sophisticated red Audi A4 sedan from 2020, boasting a perfect blend of performance, style, and cutting-edge technology."</p>
                 </div>
                 <div class="subreview-stats subreview-column center">
-                    <span>20 Likes | 8 Dislikes</span>
+                    <span>5/10</span>
                 </div>
                 <div class="subreview-info subreview-column">
                     <b><a href="">Last post</a></b> by <a href="">Admin</a> 
@@ -116,7 +111,7 @@ include('process_form_year.php');
                     <p>Description Content: ": A vibrant red Volkswagen Jetta sedan, 2019 model, offering a perfect blend of style, efficiency, and modern features for an enjoyable driving experience."</p>
                 </div>
                 <div class="subreview-stats subreview-column center">
-                    <span>24 Likes | 4 Dislikes</span>
+                    <span>9.2/10</span>
                 </div>
                 <div class="subreview-info subreview-column">
                     <b><a href="">Last post</a></b> by <a href="">Admin</a> 
@@ -136,7 +131,7 @@ include('process_form_year.php');
                     <p>Description Content: "A pristine white Mercedes-Benz C-Class sedan, 2021 model, featuring elegant design, advanced safety features, and a luxurious driving experience."</p>
                 </div>
                 <div class="subreview-stats subreview-column center">
-                    <span>4 Likes | 1 Dislikes</span>
+                    <span>4.75/10</span>
                 </div>
                 <div class="subreview-info subreview-column">
                     <b><a href="">Last post</a></b> by <a href="">Admin</a> 
@@ -155,7 +150,7 @@ include('process_form_year.php');
                     <p>Description Content: "A cheerful yellow sedan, 2023 model, providing a budget-friendly and reliable option for daily commuting with a touch of vibrant style."</p>
                 </div>
                 <div class="subreview-stats subreview-column center">
-                    <span>14 Likes | 3 Dislikes</span>
+                    <span>8.75/10</span>
                 </div>
                 <div class="subreview-info subreview-column">
                     <b><a href="">Last post</a></b> by <a href="">Admin</a> 
@@ -174,7 +169,7 @@ include('process_form_year.php');
                     <p>Description Content: "A sophisticated gray BMW X5 SUV, 2022 model, combining luxury, performance, and spacious interiors for a superior driving experience."</p>
                 </div>
                 <div class="subreview-stats subreview-column center">
-                    <span>17 Likes | 4 Dislikes</span>
+                    <span>4/10</span>
                 </div>
                 <div class="subreview-info subreview-column">
                     <b><a href="">Last post</a></b> by <a href="">Admin</a> 
@@ -229,15 +224,15 @@ include('process_form_year.php');
             <div class="subreview-row">
                 <div class="subreview-icon subreview-column center">
                 <div class="containerImg">
-                <?php displayImage(2) ?>
+                <?php displayImage(1) ?>
                      </div>
                 </div>
                 <div class="subreview-description subreview-column">
-                    <h4><a href="#">[<?php displayBrand(2)  ?>]</a><a>[<?php displayModel(2)  ?>]</a><a>[<?php displayYear(2)  ?>]</a><a>[<?php displayPrice(2)  ?>]</a></h4>
-                    <p><?php displayReview(2)  ?></p>
+                    <h4><a href="#">[<?php displayBrand(1)  ?>]</a><a>[<?php displayModel(1)  ?>]</a><a>[<?php displayYear(1)  ?>]</a><a>[<?php displayPrice(1)  ?>]</a></h4>
+                    <p><?php displayReview(1)  ?></p>
                 </div>
                 <div class="subreview-stats subreview-column center">
-                    <span><?php displayRating(2)  ?>/10</span>
+                    <span><?php displayRating(1)  ?>/10</span>
                 </div>
                 <div class="subreview-info subreview-column">
                     <b><a href="">Last post</a></b> by <a href="">Admin</a> 
@@ -245,11 +240,6 @@ include('process_form_year.php');
                 </div>
             </div>
 
-           
-
-            
-        </div>
-    </div>
 
     <footer>
         <span>&copy;  Auto Insights | All Rights Reserved</span>

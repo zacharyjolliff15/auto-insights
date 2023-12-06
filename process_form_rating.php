@@ -29,7 +29,7 @@ function displayRating($index) {
         echo "$reviewContent";
         // echo "Review #$index: $reviewContent";
     } else {
-        echo "Review not yet written!";
+        echo "~";
     }
 }
 
