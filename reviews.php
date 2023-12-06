@@ -48,9 +48,12 @@ include('process_form_year.php');
         <div class="search-box">
             <div>
                 <select name="" id="">
-                    <option value="Everything">Everything</option>
-                    <option value="Titles">Titles</option>
-                    <option value="Descriptions">Descriptions</option>
+                    <option value="Brand">Brand</option>
+                    <option value="Model">Model</option>
+                    <option value="Year">Year</option>
+                    <option value="Price">Price</option>
+                    <option value="User">User</option>
+                    
                 </select>
                 <input type="text" name="q" placeholder="search ...">
                 <button><i class="fa fa-search"></i></button>
